@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    tools:context="com.demo.mybluetoothdemo.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_ble_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:text="您所连接的设备是：" />
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止扫描" />
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"></ListView>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="发送" />
+
+    <Button
+        android:id="@+id/btn_disconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="断开连接" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="数据发送区域：" />
+    <EditText
+        android:id="@+id/ed_write_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入十六进制数"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="接收数据区域：" />
+
+    <TextView
+        android:id="@+id/tv_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="" />
+
+</LinearLayout>
